@@ -1,0 +1,141 @@
+{
+  "subset": "fixed_556_v1_1",
+  "scanner": "scan_execscan_trusted",
+  "judgment_distribution": {
+    "v1_0": {
+      "normal": 166,
+      "malicious": 285,
+      "suspicious": 105
+    },
+    "v1_1": {
+      "normal": 166,
+      "malicious": 316,
+      "suspicious": 74
+    }
+  },
+  "three_class": {
+    "v1_0": {
+      "total_ground_truth": 556,
+      "covered": 556,
+      "coverage": 1.0,
+      "scan_errors_or_missing": 0,
+      "accuracy": 0.8525179856115108,
+      "macro_f1": 0.8199121271410429,
+      "malicious_recall": 0.8842105263157894,
+      "malicious_false_negative_rate": 0.11578947368421053,
+      "non_normal_recall": 0.941025641025641,
+      "per_label": {
+        "normal": {
+          "precision": 0.8614457831325302,
+          "recall": 0.8614457831325302,
+          "f1": 0.8614457831325302,
+          "support": 166
+        },
+        "suspicious": {
+          "precision": 0.6124031007751938,
+          "recall": 0.7523809523809524,
+          "f1": 0.6752136752136751,
+          "support": 105
+        },
+        "malicious": {
+          "precision": 0.9655172413793104,
+          "recall": 0.8842105263157894,
+          "f1": 0.9230769230769231,
+          "support": 285
+        }
+      },
+      "confusion": {
+        "normal": {
+          "normal": 143,
+          "suspicious": 22,
+          "malicious": 1
+        },
+        "suspicious": {
+          "normal": 18,
+          "suspicious": 79,
+          "malicious": 8
+        },
+        "malicious": {
+          "normal": 5,
+          "suspicious": 28,
+          "malicious": 252
+        }
+      }
+    },
+    "v1_1": {
+      "total_ground_truth": 556,
+      "covered": 556,
+      "coverage": 1.0,
+      "scan_errors_or_missing": 0,
+      "accuracy": 0.814748201438849,
+      "macro_f1": 0.7581426096253949,
+      "malicious_recall": 0.8132911392405063,
+      "malicious_false_negative_rate": 0.18670886075949367,
+      "non_normal_recall": 0.941025641025641,
+      "per_label": {
+        "normal": {
+          "precision": 0.8614457831325302,
+          "recall": 0.8614457831325302,
+          "f1": 0.8614457831325302,
+          "support": 166
+        },
+        "suspicious": {
+          "precision": 0.4108527131782946,
+          "recall": 0.7162162162162162,
+          "f1": 0.522167487684729,
+          "support": 74
+        },
+        "malicious": {
+          "precision": 0.9846743295019157,
+          "recall": 0.8132911392405063,
+          "f1": 0.8908145580589255,
+          "support": 316
+        }
+      },
+      "confusion": {
+        "normal": {
+          "normal": 143,
+          "suspicious": 22,
+          "malicious": 1
+        },
+        "suspicious": {
+          "normal": 18,
+          "suspicious": 53,
+          "malicious": 3
+        },
+        "malicious": {
+          "normal": 5,
+          "suspicious": 54,
+          "malicious": 257
+        }
+      }
+    }
+  },
+  "binary_non_normal": {
+    "v1_0": {
+      "tp": 367,
+      "fp": 23,
+      "tn": 143,
+      "fn": 23,
+      "precision": 0.941,
+      "recall": 0.941,
+      "f1": 0.941
+    },
+    "v1_1": {
+      "tp": 367,
+      "fp": 23,
+      "tn": 143,
+      "fn": 23,
+      "precision": 0.941,
+      "recall": 0.941,
+      "f1": 0.941
+    }
+  },
+  "changes": {
+    "adjudicated_cases": 70,
+    "judgment_changed": 31,
+    "suspicious_promoted_to_malicious": 31,
+    "risk_label_set_changed": 44,
+    "quality_rewritten_cases": 228
+  }
+}
